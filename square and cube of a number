@@ -1,12 +1,13 @@
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 int main()
 {
-int num,sq,cu;
-printf(&quot;Enter a number : &quot;);
-scanf(&quot;%d&quot;,&amp;num);
-sq=num*num;
-cu=num*num*num;
-printf(&quot;Square of %d = %d\n&quot;,num,sq);
-printf(&quot;cube of %d = %d\n&quot;,num,cu);
-return 0;
+    int num,sq,cu;
+    printf("Enter a number : ");
+    scanf("%d",&num);
+    sq=num*num;
+    cu=num*num*num;
+    printf("Square of %d = %d\n",num,sq);
+    printf("cube of %d = %d\n",num,cu);
+    return 0;
 }
+
