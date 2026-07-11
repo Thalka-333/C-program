@@ -1,12 +1,13 @@
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 int main()
 {
-int km,m,cm;
-printf(&quot;Enter distance in kilometer : &quot;);
-scanf(&quot;%d&quot;,&amp;km);
-m=km*1000;
-cm=km*10000;
-printf(&quot;%d km = %d m\n&quot;,km,m);
-printf(&quot;%d km = %d cm&quot;,km,cm);
-return 0;
+    int km,m,cm;
+    printf("Enter distance in kilometer : ");
+    scanf("%d",&km);
+    m=km*1000;
+    cm=km*10000;
+    printf("%d km = %d m\n",km,m);
+    printf("%d km = %d cm",km,cm);
+    return 0;
 }
+
