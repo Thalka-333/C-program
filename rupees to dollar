@@ -1,10 +1,11 @@
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 int main()
 {
-float rup,dol;
-printf(&quot;Enter the amount in rupees : &quot;);
-scanf(&quot;%f&quot;,&amp;rup);
-dol=rup/83;
-printf(&quot;%f rupees = %f dollars\n&quot;,rup,dol);
-return 0;
+    float rup,dol;
+    printf("Enter the amount in rupees : ");
+    scanf("%f",&rup);
+    dol=rup/83;
+    printf("%f rupees = %f dollars\n",rup,dol);
+    return 0;
 }
+
