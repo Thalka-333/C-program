@@ -1,12 +1,13 @@
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 int main()
 {
-int s1,s2,s3,s4,s5,tot,per;
-printf(&quot;Enter the mark of 5 subjects : &quot;);
-scanf(&quot;%d%d%d%d%d&quot;,&amp;s1,&amp;s2,&amp;s3,&amp;s4,&amp;s5);
-tot=s1+s2+s3+s4+s5;
-per=(tot*100)/500;
-printf(&quot;Total mark = %d\n&quot;,tot);
-printf(&quot;Percentage = %d&quot;,per);
-return 0;
+    int s1,s2,s3,s4,s5,tot,per;
+    printf("Enter the mark of 5 subjects : ");
+    scanf("%d%d%d%d%d",&s1,&s2,&s3,&s4,&s5);
+    tot=s1+s2+s3+s4+s5;
+    per=(tot*100)/500;
+    printf("Total mark = %d\n",tot);
+    printf("Percentage = %d",per);
+    return 0;
 }
+
