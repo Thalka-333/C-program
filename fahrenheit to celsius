@@ -1,0 +1,10 @@
+#include &lt;stdio.h&gt;
+int main()
+{
+int f,c;
+printf(&quot;Enter temperature in fahrenheit : &quot;);
+scanf(&quot;%d&quot;,&amp;f);
+c=((f-32)*5)/9;
+printf(&quot;%d fahrenheit = %d celsius&quot;,f,c);
+return 0;
+}s
