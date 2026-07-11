@@ -1,12 +1,13 @@
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 int main()
 {
-int a,b;
-printf(&quot;Enter numbers a,b: &quot;);
-scanf(&quot;%d%d&quot;,&amp;a,&amp;b);
-a=a+b;
-b=a-b;
-a=a-b;
-printf(&quot;After swapping :\n a = %d \n b = %d\n&quot;,a,b);
-return 0;
+    int a,b;
+    printf("Enter numbers a,b: ");
+    scanf("%d%d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("After swapping :\n a = %d \n b = %d\n",a,b);
+    return 0;
 }
+
