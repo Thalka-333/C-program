@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+ {
+    float r, h, slant_height, area, volume;
+    float pi = 3.14159;
+    printf("Enter radius of the cone: ");
+    scanf("%f", &r);
+    printf("Enter height of the cone: ");
+    scanf("%f", &h);
+    slant_height = sqrt((r * r) + (h * h));
+    area = pi * r * (r + slant_height);
+    volume = (1.0 / 3.0) * pi * r * r * h;
+    printf("Total Surface Area of Cone = %f\n", area);
+    printf("Volume of Cone = %f\n", volume);
+    return 0;
+}
