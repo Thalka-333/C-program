@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+int* fairCandySwap(int* aliceSizes, int aliceSizesSize, int* bobSizes, int bobSizesSize, int* returnSize) {
+    int sumA = 0;
+    int sumB = 0;
+    for (int i = 0; i < aliceSizesSize; i++) {
+        sumA += aliceSizes[i];
+    }
+    int maxBob = 0;
+    for (int i = 0; i < bobSizesSize; i++) {
+        sumB += bobSizes[i];
+        if (bobSizes[i] > maxBob) {
+            maxBob = bobSizes[i];
+        }
+    }
+    int delta = (sumB - sumA) / 2;
+    bool* bobHas = (bool*)calloc(maxBob + 1, sizeof(bool));
+    for (int i = 0; i < bobSizesSize; i++) {
+        bobHas[bobSizes[i]] = true;
+    }
+    int* result = (int*)malloc(2 * sizeof(int));
+    *returnSize = 2;
+    for (int i = 0; i < aliceSizesSize; i++) {
+        int x = aliceSizes[i];
+        int targetY = x + delta;
+        if (targetY >= 1 && targetY <= maxBob && bobHas[targetY]) {
+            result[0] = x;
+            result[1] = targetY;
+            break;
+        }
+    }
+    free(bobHas);
+    return result;
+}
